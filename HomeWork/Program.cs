@@ -13,7 +13,7 @@ string[] SortArrayString(string[] arr)
     int len = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i].Length <= 3) len += 1;
+        if (arr[i].Length <= 3) len ++;
 
     }
     string[] newArray = new string[len];
