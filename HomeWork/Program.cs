@@ -10,17 +10,18 @@ PrintArray(sortArray);
 
 string[] SortArrayString(string[] arr)
 {
+    int limitLength = 3;
     int len = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i].Length <= 3) len ++;
+        if (arr[i].Length <= limitLength) len ++;
 
     }
     string[] newArray = new string[len];
     int j = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i].Length <= 3)
+        if (array[i].Length <= limitLength)
         {
             newArray[j] = array[i];
             j++;
